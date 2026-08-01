@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>분배 내역 | SOL ENCHANT</title>
+  <link rel="stylesheet" href="styles.css?v=settings-1">
+</head>
+<body class="subpage-body">
+<header class="subpage-header">
+  <a class="brand-link" href="index.html">SOL ENCHANT <span>신들린 길드</span></a>
+  <nav><a href="index.html">홈</a><a href="members.html">길드원</a><a href="weekly.html">주간통계</a><a href="total.html">전체통계</a><a href="storage.html">길드창고</a></nav>
+</header>
+<main class="subpage-main distribution-main">
+  <section class="page-title"><p>OFFICIAL GUILD</p><h1>분배 내역</h1><span>현재 길드 다이아에서 이전 길드 자금을 제외한 신규 금액의 30%는 적립하고, 나머지 70%는 주간 분배점수로 분배합니다.</span></section>
+
+  <section class="distribution-summary">
+    <div class="distribution-cards">
+      <article class="summary-card"><span>이번 주 신규 판매금</span><strong id="totalSales">-</strong></article>
+      <article class="summary-card"><span>분배 가능 금액 70%</span><strong id="distributionPool">-</strong></article>
+      <article class="summary-card"><span>이전 길드 자금</span><strong id="previousGuildFund">-</strong></article>
+      <article class="summary-card"><span>이번 주 적립금 30%</span><strong id="weeklyReserve">-</strong></article>
+      <article class="summary-card"><span>분배 후 길드 자금</span><strong id="nextGuildFund">-</strong></article>
+      <article class="summary-card"><span>분배 대상 인원</span><strong id="eligibleCount">-</strong></article>
+      <article class="summary-card"><span>정산 기간</span><strong id="distributionPeriod">-</strong></article>
+      <article class="summary-card"><span>분배일</span><strong id="distributionDay">-</strong></article>
+    </div>
+    <article class="guild-fund-card">
+      <span>길드 다이아</span>
+      <strong id="guildDiamonds">-</strong>
+      <small>게임 길드창고에 실제 보유 중인 다이아</small>
+    </article>
+  </section>
+
+  <section class="member-panel">
+    <div class="member-toolbar distribution-toolbar">
+      <strong>주간 점수 비례 분배</strong>
+      <div class="toolbar-actions">
+        <select id="distributionSort" aria-label="정렬"><option value="pay">확정분배금 높은 순</option><option value="score">분배점수 높은 순</option><option value="name">가나다순</option></select>
+        <input id="distributionSearch" type="search" placeholder="닉네임 검색" autocomplete="off">
+      </div>
+    </div>
+    <div class="member-table-wrap distribution-table-wrap">
+      <table class="member-table distribution-table">
+        <thead><tr><th>닉네임</th><th>보탐</th><th>게릴라</th><th>킬점수</th><th>분배점수</th><th>참여율</th><th>분배대상</th><th>예상분배금</th><th>확정분배금</th></tr></thead>
+        <tbody id="distributionBody"><tr><td colspan="9">분배 정보를 불러오는 중...</td></tr></tbody>
+        <tfoot><tr><th colspan="7">합계</th><th id="expectedTotal">-</th><th id="confirmedTotal">-</th></tr></tfoot>
+      </table>
+    </div>
+  </section>
+</main>
+<script src="js/distribution.js?v=settings-1"></script>
+</body></html>

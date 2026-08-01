@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>전체 통계 | SOL ENCHANT</title>
+  <link rel="stylesheet" href="styles.css?v=total-1">
+</head>
+<body class="subpage-body">
+  <header class="subpage-header">
+    <a class="brand-link" href="index.html">SOL ENCHANT <span>신들린 길드</span></a>
+    <nav>
+      <a href="index.html">홈</a>
+      <a href="members.html">길드원</a>
+      <a href="weekly.html">주간통계</a>
+      <a href="total.html">전체통계</a>
+    </nav>
+  </header>
+
+  <main class="subpage-main">
+    <section class="page-title">
+      <p>OFFICIAL GUILD</p>
+      <h1>전체 통계</h1>
+      <span>누적 활동점수와 보스 참여율을 확인합니다.</span>
+    </section>
+
+    <section class="member-panel total-panel">
+      <div class="member-toolbar total-toolbar">
+        <strong>전체 통계 · <span id="totalCount">-</span>명</strong>
+        <input id="totalSearch" type="search" placeholder="닉네임 검색" autocomplete="off">
+      </div>
+
+      <div class="total-controls">
+        <label>정렬
+          <select id="totalSort">
+            <option value="score">활동점수 높은 순</option>
+            <option value="rate">보스 참여율 높은 순</option>
+            <option value="kill">전체 Kill 높은 순</option>
+            <option value="name">닉네임 가나다순</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="member-table-wrap">
+        <table class="member-table total-table">
+          <thead>
+            <tr>
+              <th>순위</th>
+              <th>닉네임</th>
+              <th>보탐</th>
+              <th>게릴라</th>
+              <th>전체 Kill</th>
+              <th>전체 활동점수</th>
+              <th>보스 참여율</th>
+            </tr>
+          </thead>
+          <tbody id="totalTableBody">
+            <tr><td colspan="7">전체 통계를 불러오는 중...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/total.js?v=total-1"></script>
+</body>
+</html>

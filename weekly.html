@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>주간 통계 | SOL ENCHANT</title>
+  <link rel="stylesheet" href="styles.css?v=weekly-1">
+</head>
+<body class="subpage-body">
+  <header class="subpage-header">
+    <a class="brand-link" href="index.html">SOL ENCHANT <span>신들린 길드</span></a>
+    <nav>
+      <a href="index.html">홈</a>
+      <a href="members.html">길드원</a>
+      <a href="weekly.html">주간통계</a>
+      <a href="total.html">전체통계</a>
+    </nav>
+  </header>
+
+  <main class="subpage-main">
+    <section class="page-title">
+      <p>OFFICIAL GUILD</p>
+      <h1>주간 통계</h1>
+      <span>길드봇이 계산한 이번 주 활동 현황입니다.</span>
+    </section>
+
+    <section class="member-panel weekly-panel">
+      <div class="member-toolbar weekly-toolbar">
+        <strong>주간 통계 · <span id="weeklyCount">-</span>명</strong>
+        <input id="dataSearch" type="search" placeholder="닉네임 검색" autocomplete="off">
+      </div>
+
+      <div class="weekly-controls">
+        <label>정렬
+          <select id="weeklySort">
+            <option value="score">분배점수 높은 순</option>
+            <option value="rate">보스 참여율 높은 순</option>
+            <option value="kill">킬점수 높은 순</option>
+            <option value="name">닉네임 가나다순</option>
+          </select>
+        </label>
+        <label>분배 대상
+          <select id="targetFilter">
+            <option value="전체">전체</option>
+            <option value="O">O만 보기</option>
+            <option value="X">X만 보기</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="member-table-wrap">
+        <table class="member-table weekly-table">
+          <thead>
+            <tr>
+              <th>닉네임</th>
+              <th>보탐</th>
+              <th>게릴라</th>
+              <th>킬점수</th>
+              <th>분배점수</th>
+              <th>보스 참여율</th>
+              <th>분배대상</th>
+              <th>예상분배금</th>
+            </tr>
+          </thead>
+          <tbody id="dataTableBody">
+            <tr><td colspan="8">주간 통계를 불러오는 중...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/weekly.js?v=weekly-1"></script>
+</body>
+</html>

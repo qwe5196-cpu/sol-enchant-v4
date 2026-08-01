@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>아이템 분배 | SOL ENCHANT</title>
+  <link rel="stylesheet" href="styles.css?v=items-1">
+</head>
+<body class="subpage-body">
+  <header class="subpage-header">
+    <a class="brand-link" href="index.html">SOL ENCHANT <span>신들린 길드</span></a>
+    <nav>
+      <a href="index.html">홈</a>
+      <a href="members.html">길드원</a>
+      <a href="storage.html">길드창고</a>
+      <a href="distribution.html">분배내역</a>
+    </nav>
+  </header>
+
+  <main class="subpage-main">
+    <section class="page-title">
+      <p>ITEM DISTRIBUTION</p>
+      <h1>아이템 분배</h1>
+      <span>누가 어떤 아이템을 구매했는지 확인하는 판매 기록입니다.</span>
+    </section>
+
+    <section class="item-rule-card">
+      <strong>아이템 구매 규칙</strong>
+      <span>단일 입찰은 최근 구매자도 구매할 수 있습니다. 여러 명이 입찰한 경우 최근 구매자는 다른 길드원에게 양보합니다.</span>
+    </section>
+
+    <section class="member-panel">
+      <div class="member-toolbar">
+        <strong>아이템 판매 기록 <span class="toolbar-count">총 <b id="itemSaleCount">-</b>건</span></strong>
+        <input id="itemSearch" type="search" placeholder="아이템명 또는 구매자 검색" autocomplete="off">
+      </div>
+
+      <div class="item-controls">
+        <label>정렬
+          <select id="itemSort">
+            <option value="latest">최신 판매순</option>
+            <option value="price">판매금액 높은 순</option>
+            <option value="buyer">구매자 가나다순</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="member-table-wrap">
+        <table class="member-table item-history-table">
+          <thead>
+            <tr>
+              <th>번호</th>
+              <th>판매일</th>
+              <th>아이템명</th>
+              <th>등급</th>
+              <th>종류</th>
+              <th>직업</th>
+              <th>구매자</th>
+              <th>판매금액</th>
+              <th>구매 이력</th>
+            </tr>
+          </thead>
+          <tbody id="itemTableBody">
+            <tr><td colspan="9">아이템 분배 기록을 불러오는 중...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/items.js?v=items-1"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SOL ENCHANT 신들린 길드</title>
+  <link rel="stylesheet" href="styles.css?v=items-1" />
+</head>
+<body>
+  <div class="viewport" id="viewport">
+    <main class="stage" id="stage" aria-label="SOL ENCHANT 신들린 길드 홈페이지">
+      <img class="base" src="assets/main2.png" alt="SOL ENCHANT 신들린 길드 메인 화면" />
+
+      <nav aria-label="상단 메뉴">
+        <a class="hotspot top-home" href="index.html" aria-label="HOME"></a>
+        <a class="hotspot top-members" href="members.html" aria-label="길드원"></a>
+        <button class="hotspot top-storage" data-page="storage" aria-label="길드 창고"></button>
+        <button class="hotspot top-stats" data-page="stats" aria-label="길드 통계"></button>
+        <button class="hotspot top-distribution" data-page="distribution" aria-label="분배 내역"></button>
+        <button class="hotspot top-kills" data-page="items" aria-label="아이템 분배"></button>
+      </nav>
+
+
+      <section class="dynamic-values" aria-label="길드 현황">
+        <div class="mvp-row mvp-1"><span id="mvp1Name">-</span><b id="mvp1Score">-</b></div>
+        <div class="mvp-row mvp-2"><span id="mvp2Name">-</span><b id="mvp2Score">-</b></div>
+        <div class="mvp-row mvp-3"><span id="mvp3Name">-</span><b id="mvp3Score">-</b></div>
+
+        <div class="member-number" id="memberCount">-</div>
+
+        <button class="profile-trigger" id="profileTrigger" type="button" aria-label="닉네임 조회"></button>
+        <div class="profile-name" id="profileName"></div>
+        <div class="profile-number weekly" id="weeklyScore"></div>
+        <div class="profile-number total" id="totalScore"></div>
+        <div class="profile-number boss" id="bossRate"></div>
+        <div class="profile-number all-kill" id="allKill"></div>
+        <div class="profile-number week-kill" id="weekKill"></div>
+        <div class="profile-number latest-pay" id="latestPay"></div>
+      </section>
+
+      <nav aria-label="빠른 메뉴">
+        <a class="hotspot quick-members" href="members.html" aria-label="길드원 목록"></a>
+        <button class="hotspot quick-weekly" data-page="weekly" aria-label="주간 통계"></button>
+        <button class="hotspot quick-total" data-page="total" aria-label="전체 통계"></button>
+        <button class="hotspot quick-storage" data-page="storage" aria-label="길드 창고"></button>
+        <button class="hotspot quick-distribution" data-page="distribution" aria-label="분배 내역"></button>
+        <button class="hotspot quick-kills" data-page="items" aria-label="아이템 분배"></button>
+      </nav>
+
+      <div id="status" class="sr-only" aria-live="polite"></div>
+    </main>
+  </div>
+
+  <script src="script.js?v=profile-fix-1"></script>
+</body>
+</html>
