@@ -10,3 +10,4 @@ SOL ENCHANT 신들린 길드 홈페이지
    - 분배💎
    - 킬통계
 5. styles.css에는 사용자가 F12로 맞춘 메인 좌표가 반영되어 있습니다.
+Commit changes
