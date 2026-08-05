@@ -373,3 +373,5 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .distribution-image-button:hover{filter:brightness(1.08);transform:translateY(-1px)}
 .distribution-image-button:active{transform:translateY(0)}
 .distribution-image-button:disabled{opacity:.62;cursor:wait;transform:none}
+
+.distribution-image-status{min-width:140px;color:#ffe8a3;font-size:13px;font-weight:700;white-space:nowrap}

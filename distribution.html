@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>분배 내역 | SOL ENCHANT</title>
-  <link rel="stylesheet" href="styles.css?v=distribution-image-3">
+  <link rel="stylesheet" href="styles.css?v=distribution-image-4">
 </head>
 <body class="subpage-body">
 <header class="subpage-header">
@@ -36,7 +36,7 @@
     <div class="member-toolbar distribution-toolbar">
       <strong>주간 점수 비례 분배</strong>
       <div class="toolbar-actions">
-        <button id="downloadDistributionImage" class="distribution-image-button" type="button">📷 분배 내역 이미지 생성</button>
+        <button id="downloadDistributionImage" class="distribution-image-button" type="button" onclick="createDistributionImage()">📷 분배 내역 이미지 생성</button><span id="distributionImageStatus" class="distribution-image-status" aria-live="polite"></span>
         <select id="distributionSort" aria-label="정렬"><option value="pay">확정분배금 높은 순</option><option value="score">분배점수 높은 순</option><option value="name">가나다순</option></select>
         <input id="distributionSearch" type="search" placeholder="닉네임 검색" autocomplete="off">
       </div>
@@ -50,5 +50,5 @@
     </div>
   </section>
 </main>
-<script src="js/distribution.js?v=distribution-image-3"></script>
+<script src="js/distribution.js?v=distribution-image-4"></script>
 </body></html>
