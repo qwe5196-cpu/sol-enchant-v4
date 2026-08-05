@@ -368,3 +368,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .distribution-image-btn{min-height:42px;padding:0 16px;border:1px solid rgba(235,190,87,.72);border-radius:9px;color:#fff0b5;font-weight:900;background:linear-gradient(180deg,rgba(90,57,8,.88),rgba(39,20,3,.95));cursor:pointer;white-space:nowrap;box-shadow:0 0 18px rgba(229,174,62,.12)}
 .distribution-image-btn:hover{transform:translateY(-1px);border-color:#ffe071;box-shadow:0 0 22px rgba(229,174,62,.22)}
+
+.distribution-image-button{min-height:42px;padding:0 16px;border:1px solid rgba(255,211,91,.68);border-radius:9px;color:#160a00;background:linear-gradient(135deg,#ffe572,#dba52e);font-weight:900;cursor:pointer;white-space:nowrap;box-shadow:0 0 18px rgba(232,177,54,.12)}
+.distribution-image-button:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.distribution-image-button:active{transform:translateY(0)}
+.distribution-image-button:disabled{opacity:.62;cursor:wait;transform:none}
