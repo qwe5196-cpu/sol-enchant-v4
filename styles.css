@@ -373,3 +373,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .distribution-image-button:hover{filter:brightness(1.08);transform:translateY(-1px)}
 .distribution-image-button:active{transform:translateY(0)}
 .distribution-image-button:disabled{opacity:.62;cursor:wait;transform:none}
+
+.distribution-image-status{font-size:12px;font-weight:800;color:#b9a7c5;white-space:nowrap}
+.distribution-image-status[data-state="ready"]{color:#8be9ad}
+.distribution-image-status[data-state="working"]{color:#ffe178}
+.distribution-image-status[data-state="success"]{color:#69e89c}
+.distribution-image-status[data-state="error"]{color:#ff7b82}
